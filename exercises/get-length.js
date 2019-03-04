@@ -9,6 +9,8 @@
 
 // Your code :
 
+const getLength = (toto) => toto.length;
+
 //* Begin of tests
 const assert = require('assert')
 
