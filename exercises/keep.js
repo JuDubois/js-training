@@ -12,9 +12,14 @@
  *
  */
 
+ const keepFirst = (str) => str.substr(0, 2);
+ const keepLast = (str) => str.substr(str.length -2, str.length);
+ const keepFirstLast = (str) => str.substr(3, 2);
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(keepFirst("helloworld"), "he")
+assert.strictEqual(keepLast("helloworld"), "ld")
+assert.strictEqual(keepFirstLast("helloworld"), "lo")
 // End of tests */

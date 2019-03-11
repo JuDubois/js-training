@@ -11,6 +11,17 @@
 
 // Your code :
 
+const multiply = (num1, num2) => {
+
+  if(num1 === 0 || num2 === 0) {
+    return 0;
+  }
+
+  let result = num1 + multiply(num1, Math.abs(num2)-1);
+
+  return (num2 < 0) ? (-result) : result;
+}
+
 //* Begin of tests
 const assert = require('assert')
 
